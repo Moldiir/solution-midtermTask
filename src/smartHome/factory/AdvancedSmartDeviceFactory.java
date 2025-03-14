@@ -1,18 +1,24 @@
 package smartHome.factory;
 
+
+import smartHome.devices.*;
+import smartHome.decorator.LoggingDecorator;
+import smartHome.decorator.ScheduledOperationDecorator;
+
 public class AdvancedSmartDeviceFactory implements SmartDeviceFactory {
+
     @Override
-    public SmartLight createLight() {
-        return new SmartLight(); // optionally wrap in decorator
+    public SmartDevice createLight() {
+        return new LoggingDecorator(new SmartLight());
     }
 
     @Override
-    public SmartThermostat createThermostat() {
-        return new SmartThermostat(); // optionally wrap in decorator
+    public SmartDevice createThermostat() {
+        return new ScheduledOperationDecorator(new SmartThermostat());
     }
 
     @Override
-    public SmartCamera createCamera() {
-        return new SmartCamera();
+    public SmartDevice createCamera() {
+        return new SmartCamera(); // можно тоже обернуть в декоратор, если нужно
     }
 }

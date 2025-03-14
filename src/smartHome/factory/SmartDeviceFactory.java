@@ -1,7 +1,12 @@
 package smartHome.factory;
 
+
+import smartHome.devices.SmartDevice;
+
 public interface SmartDeviceFactory {
-    SmartLight createLight();
-    SmartThermostat createThermostat();
-    SmartCamera createCamera();
+    SmartDevice createLight();
+
+    SmartDevice createThermostat();
+
+    SmartDevice createCamera();
 }

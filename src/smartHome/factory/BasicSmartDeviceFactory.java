@@ -1,18 +1,22 @@
 package smartHome.factory;
 
+
+import smartHome.devices.*;
+
 public class BasicSmartDeviceFactory implements SmartDeviceFactory {
+
     @Override
-    public SmartLight createLight() {
+    public SmartDevice createLight() {
         return new SmartLight();
     }
 
     @Override
-    public SmartThermostat createThermostat() {
+    public SmartDevice createThermostat() {
         return new SmartThermostat();
     }
 
     @Override
-    public SmartCamera createCamera() {
+    public SmartDevice createCamera() {
         return new SmartCamera();
     }
 }
