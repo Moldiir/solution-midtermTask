@@ -36,14 +36,14 @@ Run `SmartHomeService.java` from `/service/` package to simulate:
 
 # Coffee Shop Simulator 
 
-## 🎯 Objective
+##  Objective
 A lightweight Java-based Coffee Ordering System to demonstrate Factory Method and Decorator patterns. Users can select a coffee base and customize it with dynamic toppings and ingredients.
 
-## 🔧 Applied Design Patterns:
+##  Applied Design Patterns:
 - **Factory Method** – for coffee object creation (Espresso, Latte, Cappuccino, Mocha, Americano)
 - **Decorator Pattern** – for adding ingredients and modifying coffee behavior dynamically
 
-## 📦 System Architecture:
+##  System Architecture:
 - **Interface:** `Coffee` interface with `getCost()` and `getDescription()`
 - **Coffee Types:** `Espresso`, `Latte`, `Cappuccino`, `Americano`, `Mocha`
 - **Factory:** `CoffeeFactory`, `ConcreteCoffeeFactory` classes for coffee creation
@@ -56,13 +56,13 @@ A lightweight Java-based Coffee Ordering System to demonstrate Factory Method an
   - `CaramelDecorator`
   - `WhippedCreamDecorator`
 
-## ✅ Functional Features:
+##  Functional Features:
 - Console-based UI to:
   - Choose coffee base
   - Add any combination of toppings
   - Display final customized order with cost and description
 
-## ▶️ Demo Instructions:
+##  Demo Instructions:
 Run `MainApp.java` from `/main/` package. Follow console prompts:
 1. Choose coffee
 2. Add toppings
